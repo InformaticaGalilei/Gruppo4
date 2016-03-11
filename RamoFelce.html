@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><title>Ramo di felce</title>
+
+<link rel="stylesheet" href="FogliodiStile.css" type="css">
+<script language="javascript">
+function clear(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+ctx.clearRect(0, 0, cnvas.width, canvas.height)
+}
+function felce(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+var w = ctx.canvas.width, h = ctx.canvas.height-10;
+var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+var r=Math.random()*2;
+if (r<=1)
+r=1;
+else
+r=-1;
+for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+else if (p < .86) t = 0.85*x + 0.04*y, y = -0.04*x + 0.85*y + 1.6, x = t;
+else if (p < .93) t = 0.2*x - 0.26*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+else t = -0.15*x + 0.28*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+var p = (Math.floor(r*0.2*(x+2.2)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+pix[p+1]=190, pix[p+3] = 255;
+
+}
+ctx.putImageData(img, 0, 0);
+}
+function felce2(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+var w = ctx.canvas.width, h = ctx.canvas.height-10;
+var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+var r=Math.random()*2;
+if (r<=1)
+r=1;
+else
+r=-1;
+for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+else if (p < .86) t = 0.75*x + 0.04*y, y = -0.04*x + 0.85*y + 1.6, x = t;
+else if (p < .93) t = 0.2*x - 0.26*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+else t = -0.15*x + 0.28*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+var p = (Math.floor(r*0.2*(x+2.38)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+pix[p+1]=140, pix[p+3] = 255;
+}
+ctx.putImageData(img, 0, 0);
+}
+function felce3(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+var w = ctx.canvas.width, h = ctx.canvas.height-10;
+var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+var r=Math.random()*2;
+if (r<=1)
+r=1;
+else
+r=-1;
+for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+if ((p = Math.random()) < 0.02) x = 0.0, y = 0.25*y-0.14;
+else if (p < 0.85) t = 0.85*x + 0.02*y, y = -0.02*x + 0.83*y + 1.6, x = t;
+else if (p < 0.93) t = 0.09*x - 0.28*y, y = 0.3*x + 0.11*y + 1.6, x = t;
+else t = -0.09*x + 0.28*y, y = 0.3*x + 0.09*y +0.7, x = t;
+var p = (Math.floor(r*0.2*(x+2.5)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+pix[p+1]=110, pix[p+3] =255;
+}
+ctx.putImageData(img, 0, 0);
+}
+function felce4(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+var w = ctx.canvas.width, h = ctx.canvas.height-10;
+var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+var r=Math.random()*2;
+if (r<=1)
+r=1;
+else
+r=-1;
+for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+else if (p < .86) t = 0.9*x + 0.04*y, y = -0.04*x + 0.85*y + 1.6, x = t;
+else if (p < .93) t = 0.15*x - 0.15*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+else t = -0.05*x + 0.15*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+var p = (Math.floor(r*0.2*(x+1.15)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+pix[p+1]=75, pix[p+3] = 255;
+}
+ctx.putImageData(img, 0, 0);
+}
+function felce5(){
+var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+var w = ctx.canvas.width, h = ctx.canvas.height-10;
+var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+var r=Math.random()*2;
+if (r<=1)
+r=1;
+else
+r=-1;
+for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+if ((p = Math.random()) < .01) x = 0.0, y *= 0.18;
+else if (p < .86) t = 0.75*x + 0.04*y, y = -0.04*x + 0.85*y + 1.4, x = t;
+else if (p < .93) t = 0.02*x - 0.26*y, y = -0.23*x + 0.22*y + 1.5, x = t;
+else t = -0.0015*x + 0.28*y, y = -0.25*x + 0.24*y + 0.44, x = t;
+var p = (Math.floor(r*0.2*(x+2.4)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+pix[p+1]=40, pix[p+3] = 255;
+}
+ctx.putImageData(img, 0, 0);
+}
+</script>
+</head>
+
+
+<body style="background-color: rgb(8, 69, 126);">
+<div id="titolo">Ramo di felce</div>
+<div id="text">Scegli la felce che vuoi disegnare
+cliccando sul menu di seclta, inoltre se ne vuoi disegnare un'altra
+cancella quella precedente premendo il tasto Pulisci</div>
+<div id="form">
+<form> <input name="sample" id="1" onclick="felce()" type="radio"> Felce standard<br>
+<br>
+<input name="sample" id="2" onclick="felce2()" type="radio"> Felce "slanciata"<br>
+<br>
+<input name="sample" id="3" onclick="felce3()" type="radio"> Felce "larga"<br>
+<br>
+<input name="sample" id="4" onclick="felce4()" type="radio"> Felce "curva"<br>
+<br>
+<input name="sample" id="5" onclick="felce5()" type="radio"> Felce "magra"<br>
+<br>
+<input name="Pulisci" value="Pulisci" onclick="clear" type="submit"></form>
+</div>
+<div id="canvas1">
+<canvas id="canvasFelcipago" width="550" height="650">Attenzione:
+il tuo browser non supporta il tag canvas</canvas>
+</div>
+<div id="link3">
+<a href="index.html">Ritorna alla Homepage</a>
+</div>
+</body></html>

@@ -1,0 +1,179 @@
+#titolo{
+height: 80px;
+font: bold 130% Calibri,sans-serif;
+font-size: 400%;
+color: #FF4D00;
+background-color: #003153;	
+border-style:double;
+border-color:#FF4D00;
+margin-top:30 px;
+margin-bottom:10 px;
+text-align:center;
+
+}
+
+#form{
+height: 300 px;
+width: 40%;
+font: Verdana, sans-serif;
+font-size:200%;
+color:#00FF00;
+background-color: #003153;	
+border-style:double;
+border-color:#FF4D00;
+float:left;
+}
+
+#canvas1{
+height: 650 px;
+width: 550px;
+background-color:#003153;
+border-style:double;
+border-color:#FF4D00;	
+float:right;
+
+}
+#text{
+height: 40px;
+font:  Calibri,sans-serif;
+color: #00FF00;
+font-size:22px;
+background-color: #003153;	
+border-style:double;
+border-color:#FF4D00;
+text-align:center;
+}
+
+#link1{
+height: 40px;
+width:536px;
+font:  Calibri,sans-serif;
+text-align:center;
+color: #00FF00;
+font-size:22px;
+background-color: #007FFF;	
+border-style:double;
+border-color:#FF4D00;
+text-align:center;
+float:left;
+text-decoration: none;
+}
+
+
+#link1 a:hover {
+ background-color: #FF4D00;
+ color:#E5E4E2 ;
+ cursor: pointer;
+}
+
+#canvas2{
+height: 700 px;
+width: 700px;
+background-color:#003153;
+border-style:double;
+border-color:#FF4D00;	
+margin: 0 auto;
+}
+
+#link2{
+height: 40px;
+width:536px;
+font:  Calibri,sans-serif;
+text-align:center;
+color: #00FF00;
+font-size:22px;
+background-color: #007FFF;	
+border-style:double;
+border-color:#FF4D00;
+text-align:center;
+float:right;
+text-decoration: none;
+}
+
+#link2 a:hover {
+ background-color: #FF4D00;
+ color:#E5E4E2 ;
+ cursor: pointer;
+}
+
+#immagine1{
+height: 569px;
+width: 536px;
+border-style:double;
+border-color:#FF4D00;
+float:left;
+}
+ 
+#immagine2{
+height: 569px;
+width: 536px;
+border-style:double;
+border-color:#FF4D00;
+float:right;
+}
+
+#form2{
+height: 50 px;
+width: 90%;
+font: Verdana, sans-serif;
+font-size:20px;
+text-align:center;
+color:#00FF00;
+background-color: #003153;	
+border-style:double;
+border-color:#FF4D00;
+margin: 0 auto;
+}
+
+
+#button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+float:left;
+
+}
+
+#link3{
+height: 40px;
+width:40%;
+font:  Calibri,sans-serif;
+text-align:center;
+color: #00FF00;
+font-size:22px;
+background-color: #007FFF;	
+border-style:double;
+border-color:#FF4D00;
+text-align:center;
+margin: 0 auto;
+text-decoration: none;
+}
+
+
+#link3 a:hover {
+ background-color: #FF4D00;
+ color:#E5E4E2 ;
+ cursor: pointer;
+}
+
+#footer{
+height: 30px;
+width:100%;
+font: italic, Calibri,sans-serif;
+color: #00FF00;
+font-size:18px;
+background-color: #003153;	
+border-style:double;
+border-color:#FF4D00;
+text-align:center;
+
+bottom:0;
+
+}
+
+

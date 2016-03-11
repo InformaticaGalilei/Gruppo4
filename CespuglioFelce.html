@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Cespuglio di felci</title>
+
+<link rel="stylesheet" href="FogliodiStile.css" type="css"/>
+<script language="javascript">
+
+    function clear(){
+        var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+        ctx.clearRect(0, 0, cnvas.width, canvas.height)
+    }
+   function felce(){
+       
+    
+    var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+	var w = ctx.canvas.width, h = ctx.canvas.height-10;
+	var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+   var r=Math.random()*2;
+    if (r<=1)
+        r=1;
+        else
+        r=-1;
+
+
+	for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+		if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+		else if (p < .86) t = 0.85*x + 0.04*y, y = -0.04*x + 0.85*y + 1.5, x = t;
+		else if (p < .93) t = 0.2*x - 0.26*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+		else t = -0.15*x + 0.28*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+		var p = (Math.floor(r*0.2*(x+2.3)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+		pix[p+1]=35, pix[p+3] = 255;
+	}
+	ctx.putImageData(img, 0, 0);
+
+    
+   }
+    function felce2(){
+       
+    
+    var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+	var w = ctx.canvas.width, h = ctx.canvas.height-10;
+	var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+   
+ var r=Math.random()*2;
+    if (r<=1)
+        r=1;
+        else
+        r=-1;
+
+	for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+		if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+		else if (p < .86) t = 0.75*x + 0.04*y, y = -0.04*x + 0.85*y + 1.5, x = t;
+		else if (p < .93) t = 0.2*x - 0.26*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+		else t = -0.15*x + 0.28*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+		var p = (Math.floor(r*0.2*(x+2.38)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+        pix[p+1]=70, pix[p+3] = 255;
+	}
+	ctx.putImageData(img, 0, 0);
+
+    
+   }
+   
+        function felce3(){
+       
+    
+    var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+    
+	var w = ctx.canvas.width, h = ctx.canvas.height-10;
+	var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+    var r=Math.random()*2;
+    if (r<=1)
+        r=1;
+        else
+        r=-1;
+
+
+	for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+		if ((p = Math.random()) < 0.02) x = 0.0, y = 0.25*y-0.14;
+		else if (p < 0.85) t = 0.85*x + 0.02*y, y = -0.02*x + 0.83*y + 1.5, x = t;
+		else if (p < 0.93) t = 0.09*x - 0.28*y, y = 0.3*x + 0.11*y + 1.6, x = t;
+		else t = -0.09*x + 0.28*y, y = 0.3*x + 0.09*y +0.7, x = t;
+		var p = (Math.floor(r*0.2*(x+2.4)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+		pix[p+1]=115, pix[p+3] =255;
+	}
+	ctx.putImageData(img, 0, 0);
+
+    
+   }
+   
+            function felce4(){
+       
+    
+    var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+	var w = ctx.canvas.width, h = ctx.canvas.height-10;
+	var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+   
+ var r=Math.random()*2;
+    if (r<=1)
+        r=1;
+        else
+        r=-1;
+
+	for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+		if ((p = Math.random()) < .01) x = 0.0, y *= 0.16;
+		else if (p < .86) t = 0.9*x + 0.04*y, y = -0.04*x + 0.85*y + 1.25, x = t;
+		else if (p < .93) t = 0.15*x - 0.15*y, y = 0.23*x + 0.22*y + 1.6, x = t;
+		else t = -0.05*x + 0.15*y, y = 0.26*x + 0.24*y + 0.44, x = t;
+		var p = (Math.floor(r*0.2*(x+2)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+		pix[p+1]=150, pix[p+3] = 255;
+	}
+	ctx.putImageData(img, 0, 0);
+
+    
+   }
+   
+    
+            function felce5(){
+       
+    
+    var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+	var w = ctx.canvas.width, h = ctx.canvas.height-10;
+	var img = ctx.getImageData(0, 0, w, h), pix = img.data;
+    var r=Math.random()*2;
+    if (r<=1)
+        r=1;
+        else
+        r=-1;
+
+
+	for (var t, p, i = 0, x = 0, y = 0; i < 500000; ++i) {
+		if ((p = Math.random()) < .01) x = 0.0, y *= 0.18;
+		else if (p < .86) t = 0.75*x + 0.04*y, y = -0.04*x + 0.85*y + 1.4, x = t;
+		else if (p < .93) t = 0.02*x - 0.26*y, y = -0.23*x + 0.22*y + 1.5, x = t;
+		else t = -0.0015*x + 0.28*y, y = -0.25*x + 0.24*y + 0.44, x = t;
+		var p = (Math.floor(r*0.2*(x+2.3)*w) + (h - Math.floor(0.1*y*h))*w) * 4;
+		pix[p+1]=210, pix[p+3] = 255;
+	}
+	ctx.putImageData(img, 0, 0);
+
+    
+   }
+    function clear(){
+        var ctx = document.getElementById('canvasFelcipago').getContext('2d');
+        ctx.clearRect(0, 0, cnvas.width, canvas.height)
+    }
+   
+    
+   function disegnaCespuglio(){
+       var nf=document.getElementById('nFoglie').value;
+      switch (nf){
+      case "2":    
+      felce();
+	  felce2();
+      break;
+      case "3":
+      felce();
+	  felce2();
+	  felce3();
+	  break;
+      case "4":
+      felce();
+	  felce2();
+	  felce3();
+	  felce4();
+	  break;
+      case "5":
+      felce();
+	  felce2();
+	  felce3();
+	  felce4();
+	  felce5();
+      break;
+      }
+   }
+   
+   
+
+ </script>
+</head>
+<body bgcolor="#08457E">
+<div id="titolo">Cespuglio di felci</div>
+<br><br>
+<div id="canvas2">
+<canvas id="canvasFelcipago" width="700" height="700">Attenzione: il tuo browser non supporta il tag canvas</canvas>
+</div>
+<div id="form2">
+<p>Inserire il numero di foglie di cui deve essere composto il cespuglio di felci che si vuole disegnare</p>
+<form>
+  <input type="number" name="numero foglie" id="nFoglie" min="2" max="5"  >
+  <input type="button" name="disegna" value="disegna" onclick="disegnaCespuglio()">
+  <input type="submit" name="Pulisci" value="Pulisci" onClick="clear">
+</form>
+</div>
+<div id="link3">
+<a href="index.html">Ritorna alla Homepage</a>
+</div>
+<div id="footer">Sito web realizzato da Crescenzi Alessandria, El Hamzaoui Badr Eddine, Vivian Alisson</div>
+
+</body>
+</html>
